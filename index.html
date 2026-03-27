@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Word Embeddings Blog</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+h2 {
+    color: #2c3e50;
+}
+
+/* CODE BOX */
+.code {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+/* HIGHLIGHT BOX */
+.highlight {
+    background: #e3f2fd;
+    padding: 15px;
+    border-left: 5px solid #2196f3;
+    margin: 10px 0;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.feature {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>Word Embeddings & Semantic Representation</h1>
+    <p>Understanding how machines interpret human language</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+    <h2>📌 Introduction</h2>
+    <p>
+        In Natural Language Processing (NLP), machines need a way to understand human language.
+        Word embeddings provide a powerful solution by converting words into numerical vectors
+        that capture meaning and relationships.
+    </p>
+</div>
+
+<div class="card">
+    <h2>🔍 What are Word Embeddings?</h2>
+    <p>
+        Word embeddings are dense vector representations of words. They capture semantic meaning,
+        allowing similar words to have similar vector representations.
+    </p>
+
+    <div class="highlight">
+        Example: "king" and "queen" are closer than "king" and "car"
+    </div>
+
+    <div class="code">
+        king → [0.9, 0.8, 0.7]<br>
+        queen → [0.9, 0.85, 0.75]
+    </div>
+</div>
+
+<div class="card">
+    <h2>⚠️ Limitations of One-Hot Encoding</h2>
+    <ul>
+        <li>Does not capture meaning</li>
+        <li>High dimensional vectors</li>
+        <li>Sparse representation</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>🚀 Popular Techniques</h2>
+
+    <div class="grid">
+        <div class="feature">
+            <h3>Word2Vec</h3>
+            <p>Uses neural networks (CBOW & Skip-gram)</p>
+        </div>
+
+        <div class="feature">
+            <h3>GloVe</h3>
+            <p>Combines global & local statistics</p>
+        </div>
+
+        <div class="feature">
+            <h3>FastText</h3>
+            <p>Handles subwords & rare words</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>🧠 Semantic Representation</h2>
+    <p>
+        Semantic representation allows machines to understand relationships between words.
+    </p>
+
+    <div class="code">
+        king - man + woman ≈ queen
+    </div>
+</div>
+
+<div class="card">
+    <h2>📊 Applications</h2>
+    <div class="grid">
+        <div class="feature">Sentiment Analysis</div>
+        <div class="feature">Chatbots</div>
+        <div class="feature">Machine Translation</div>
+        <div class="feature">Search Engines</div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>✅ Conclusion</h2>
+    <p>
+        Word embeddings revolutionized NLP by enabling machines to understand context and meaning.
+        They are the foundation of modern AI models like BERT and GPT.
+    </p>
+</div>
+
+</div>
+
+<footer>
+    © 2026 NLP Blog | Designed for Project Presentation
+</footer>
+
+</body>
+</html>
